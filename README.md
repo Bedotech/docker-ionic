@@ -1,27 +1,22 @@
-[![Travis](https://img.shields.io/travis/beevelop/docker-ionic.svg?style=flat-square)](https://travis-ci.org/beevelop/docker-ionic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/ionic.svg?style=flat-square)](https://links.beevelop.com/d-ionic)
-[![ImageLayer](https://badge.imagelayers.io/beevelop/ionic:latest.svg)](https://imagelayers.io/?images=beevelop/ionic:latest)
-[![Beevelop](https://links.beevelop.com/honey-badge)](https://beevelop.com)
-
-# Latest Ionic
-### based on the latest Cordova with the latest Android and the latest Node.js
+# Latest Ionic and git
+### based on the latest Cordova with the latest Android and the latest Node.js and the latest Ionic
 ----
 ### Pull from Docker Hub
 ```
-docker pull beevelop/ionic:latest
+docker pull cronos/ionic-git:latest
 ```
 
 ### Build from GitHub
 ```
-docker build -t beevelop/ionic github.com/beevelop/docker-ionic
+docker build -t cronos/ionic-git github.com/Bedotech/docker-ionic
 ```
 
 ### Run image
 ```
-docker run -it beevelop/ionic bash
+docker run -it cronos/ionic-git bash
 ```
 
 ### Use as base image
 ```Dockerfile
-FROM beevelop/ionic:latest
+FROM cronos/ionic-git:latest
 ```

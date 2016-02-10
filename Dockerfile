@@ -1,7 +1,7 @@
-FROM beevelop/cordova
+FROM beevelop/ionic
 
-MAINTAINER Maik Hummel <m@ikhummel.com>
+MAINTAINER Mattia Rossi <rossimattia92@gmail.com>
 
-ENV IONIC_VERSION 1.7.14
-
-RUN npm i -g --unsafe-perm ionic@${IONIC_VERSION}
+RUN apt-get update && apt-get install -y git && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
